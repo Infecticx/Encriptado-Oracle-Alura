@@ -1,0 +1,203 @@
+:root {
+    --background-color: #E9ECF8;
+    --primary-color: #0A3871;
+    --secondary-color: #495057;
+    --input-background-color: transparent;
+    --output-background-color: #FFFFFF;
+    --output-text-color: #495057;
+
+    
+}
+
+.copy{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-color);
+}
+
+.redes{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+html {
+    background: var(--background-color);
+}
+
+.Padre {
+   display: flex;
+   align-items: center; 
+   justify-content: center;
+   flex-direction: column; 
+   margin: 0 auto;
+   width: 90%; 
+   max-width: 400px; 
+   height: auto; 
+   font-size: 2rem; 
+}
+
+.Entrada {
+    font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+    gap: 40px;
+    color: var(--primary-color);
+    width: 100%; 
+}
+
+.Entrada textarea {
+    background: var(--input-background-color);
+    color: var(--primary-color);
+    border: none;
+    font-size: 1.5rem; 
+    margin: 10%;
+    outline: none; 
+    resize: none;
+    width: 100%;
+    height: 200px; 
+}
+
+#texto::placeholder {
+    color: var(--primary-color);
+}
+
+.advertencia {
+    font-size: 0.75rem; 
+    color: var(--secondary-color);
+}
+
+.botones {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.boton, .boton2, .boton3 {
+    width: 100%; 
+    max-width: 328px;
+    height: 67px;
+    background: var(--primary-color);
+    font-family: "Inter", sans-serif;
+    font-size: 1rem; 
+    color: var(--background-color);
+    border-radius: 24px;
+    border: none; 
+    cursor: pointer; 
+    gap: 10px;
+}
+
+.boton2 {
+    background: var(--background-color);
+    color:  var(--primary-color);
+    border: 1px solid var(--primary-color);
+
+}
+.boton3 {
+    background: var(--background-color);
+    color:  var(--primary-color);
+    border: 1px solid var(--primary-color);
+    
+
+}
+
+.Salida {
+    background: var(--output-background-color);
+    color: var(--secondary-color);
+    font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-start;
+    margin: 5%;
+    gap: 40px;
+    width: 90%; 
+    max-width: 400px;
+    height: auto;
+    padding: 20px;
+    border-radius: 32px;
+}
+
+.Salidatext {
+    width: 100%; 
+    gap: 16px;
+    font-size: 1.5rem; 
+}
+
+
+.cuadrosalida textarea {
+    display: flex;
+    background: var(--input-background-color);
+    width: 80%;
+    height: 219%;
+    color: var(--secondary-color);
+    font-size: 1.5rem; 
+    margin: 10%;
+    resize: none;
+    border: none;;
+}
+
+.cuadrosalida {
+    display: none;
+}
+
+.logo {
+    width: 20%;
+    height: 10%;
+    padding: 40px;
+}
+
+
+@media only screen and (min-width: 1440px) {
+    .Padre {
+        flex-direction: row;
+        max-width: 800px; 
+        justify-content: space-between;
+    }
+
+    .botones {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .boton, .boton2, .boton3 {
+        width: 48%; 
+    }
+
+    .Salida {
+        width: 50%; 
+        height: 500px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .Padre {
+        flex-direction: center;
+        max-width: 800px; 
+        justify-content: space-between;
+    }
+
+    .botones {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .boton, .boton2, .boton3 {
+        width: 48%; 
+    }
+
+    .Salida {
+        width: 50%; 
+        height: 500px; 
+    }
+}
